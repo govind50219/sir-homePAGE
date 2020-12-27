@@ -15,12 +15,15 @@ header{
     height: 10vh;
     float:right;
     margin-right:3vh;
-    margin-top:1vh;
+    margin-top:0vh;
+}
+.logomob{
+  display: none;
 }
 .icon{
-  height:6vmin;
-  margin-top:3vh;
-  margin-left:7vmin;
+  height:4vmin;
+  margin-top:4vh;
+  margin-left:3vmin;
 }
 .navbar-win{
     display:flex;
@@ -85,16 +88,21 @@ header{
   }
 
 @media screen and (max-width:1200px){
-    .logo{
+    .logomob{
+        display:initial;
         width:60vw;
         float:initial;
         margin-left:10vw;
         margin-top:1.5vh;
     }
+    .logo{
+      display:none;
+    }
     .icon{
-      height:8vmin;
+      height:6vmin;
       margin-top:1vh;
-      margin-left:12vmin;
+      margin-left:5vmin;
+      margin-bottom:1vh;
     }
     .head{
       display:flex;
@@ -103,6 +111,7 @@ header{
       padding-right:10vw;
       width:90vw;
       text-align: center;
+      min-height:1vh;
   }
     .navbar-win{
         display:none;

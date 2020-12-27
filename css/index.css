@@ -16,7 +16,7 @@ footer{
     display: flex;
     flex-direction:row-reverse;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
 }
 .read{
     color:black;
@@ -27,11 +27,12 @@ footer{
     text-decoration:underline;
 }
 .mainphoto{
-    height:80vh;
-    width:30vw;
+    height:60vh;
+    width:60vh;
+    border-radius:50%;
     object-position: top;
     object-fit: cover;
-    margin-right:30vw;
+    margin:10vh 5vw 10vh 20vw;
   }
 .contact{
     color:white;
@@ -53,13 +54,13 @@ footer{
         width:100vw;;
     }
     footer{
-        font-size:2vw;
+        font-size:1.5vw;
     }
     .mainphoto{
-        width:100vw;
-        height:initial;
+        width:70vw;
+        height:70vw;
         object-position: top;
         object-fit: cover;
-        margin-right:0vw;
+        margin-right:15vw;
       }
 }
