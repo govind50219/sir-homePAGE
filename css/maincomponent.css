@@ -9,7 +9,7 @@ header{
     box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
 }
 .head{
-    height:12vh;
+    min-height:12vh;
 }
 .logo{
     height: 10vh;
@@ -17,13 +17,18 @@ header{
     margin-right:3vh;
     margin-top:1vh;
 }
+.icon{
+  height:6vmin;
+  margin-top:3vh;
+  margin-left:7vmin;
+}
 .navbar-win{
     display:flex;
     flex-direction:row;
     justify-content:center;
     background-color: white;
     z-index:1;
-    font-size:2.3vh;
+    font-size:2.6vh;
 }
 .navbar-mobile{
     display:flex;
@@ -31,7 +36,7 @@ header{
     display: none;
 }
 .navwinlink{
-    margin:0.5vh 1vw;
+    margin:2vh 1vw;
     color:rgba(0,0,0,0.5);
     text-decoration:none;
     font-weight: 600;
@@ -82,10 +87,23 @@ header{
 @media screen and (max-width:1200px){
     .logo{
         width:60vw;
-        float:right;
-        margin-right:25vw;
+        float:initial;
+        margin-left:10vw;
         margin-top:1.5vh;
     }
+    .icon{
+      height:8vmin;
+      margin-top:1vh;
+      margin-left:12vmin;
+    }
+    .head{
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      padding-right:10vw;
+      width:90vw;
+      text-align: center;
+  }
     .navbar-win{
         display:none;
     }
@@ -94,6 +112,8 @@ header{
         flex-direction:column;
         font-size:5vh;
         transition: 0.5s;
+        position:fixed;
+        top:0;
     }
     .opennav{
         display:flex;

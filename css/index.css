@@ -6,14 +6,15 @@ article{
 footer{
     background-color:rgba(30,30,30,1);
     color:rgba(150,150,150,1);
-    height: 5vh;
+    min-height: 5vh;
     text-align:center;
-    font-size:2vh;
+    font-size:2.2vh;
+    padding:3vmin;
 }
 .main-body{
     min-height:80vh;
     display: flex;
-    flex-direction:column;
+    flex-direction:row-reverse;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -25,6 +26,20 @@ footer{
 .read:hover{
     text-decoration:underline;
 }
+.mainphoto{
+    height:80vh;
+    width:30vw;
+    object-position: top;
+    object-fit: cover;
+    margin-right:30vw;
+  }
+.contact{
+    color:white;
+    text-decoration: none;
+}
+.contact:hover{
+    text-decoration: underline;
+}
 @media screen and (max-width:1200px){
     article{
         width:80vw;
@@ -35,8 +50,16 @@ footer{
         flex-direction:column;
         justify-content: flex-end;
         align-items: center;
+        width:100vw;;
     }
-    .footer{
-        font-size:3vw;
+    footer{
+        font-size:2vw;
     }
+    .mainphoto{
+        width:100vw;
+        height:initial;
+        object-position: top;
+        object-fit: cover;
+        margin-right:0vw;
+      }
 }
