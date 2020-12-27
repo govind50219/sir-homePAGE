@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgba(200, 200, 200, 1);
+    font-family: 'linotte';
+}
+header{
+    background-color:white;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+}
+.head{
+    height:12vh;
+}
+.logo{
+    height: 10vh;
+    float:right;
+    margin-right:3vh;
+    margin-top:1vh;
+}
+.navbar-win{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    background-color: white;
+    z-index:1;
+    font-size:2.3vh;
+}
+.navbar-mobile{
+    display:flex;
+    flex-direction:column;
+    display: none;
+}
+.navwinlink{
+    margin:0.5vh 1vw;
+    color:rgba(0,0,0,0.5);
+    text-decoration:none;
+    font-weight: 600;
+}
+.navwinlink:after {   
+    content: "";
+    display: block;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background:black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navwinlink:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  .navwinlink:hover{
+    color:rgba(0,0,0,1);
+  }
+  .active{
+    color: #000;
+  }
+  .active:after{
+    content: "";
+    display: block;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background:black;
+    width: 100%;
+  }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+  }
+.sticky + .content {
+    padding-top: 60px;
+  }
+@font-face {
+	font-family: "linotte";
+	src: url("../assets/fonts/Linotte\ Regular.otf");
+  }
+
+@media screen and (max-width:1200px){
+    .logo{
+        width:60vw;
+        float:right;
+        margin-right:25vw;
+        margin-top:1.5vh;
+    }
+    .navbar-win{
+        display:none;
+    }
+    .navbar-mobile{
+        display:flex;
+        flex-direction:column;
+        font-size:5vh;
+        transition: 0.5s;
+    }
+    .opennav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:0vw;
+        height:100vh;
+        justify-content:space-around;
+        position:absolute;
+        top:0;
+        background-color:rgba(0, 0, 0 ,0.9);
+        color:white;
+        z-index:2;
+        overflow:hidden;
+        transition: 0.5s;
+    }
+    .navmoblink{
+        color:white;
+        text-decoration:none;
+    }
+    #close{
+        position: absolute;
+        top:4vh;
+        right:5vw;
+
+    }
+    #open{
+      position: fixed;
+        top:4vh;
+        right:5vw;
+    }
+}

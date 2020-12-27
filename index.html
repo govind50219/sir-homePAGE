@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/maincomponent.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <section class="head">
+                <img class="logo" src="assets/iitk-logo.svg">
+            </section>
+            <section class="navbar-win" id="navbar">
+                <a class="navwinlink active" href="" >About</a>
+                <a class="navwinlink" href="">Professional Position</a>
+                <a class="navwinlink" href="">Publication</a>
+                <a class="navwinlink" href="">Reasearch</a>
+                <a class="navwinlink" href="">Awards</a>
+                <a class="navwinlink" href="">Teaching</a>
+            </section>
+            <section class="navbar-mobile">
+                <div type="button" class="menu" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true" id="open"></i></div>
+                <section class="opennav"id="mySidenav">
+                    <div type="button" class="menu" onclick="closeNav()"><i class="fa fa-times fa-lg" aria-hidden="true" id="close" ></i></div>
+                    <a class="navmoblink" href="">About</a>
+                    <a class="navmoblink" href="">Professional Position</a>
+                    <a class="navmoblink" href="">Publication</a>
+                    <a class="navmoblink" href="">Reasearch</a>
+                    <a class="navmoblink" href="">Awards</a>
+                    <a class="navmoblink" href="">Teaching</a>
+                </section>
+            </section>
+        </header>
+        <section class="main-body">
+            <article>
+                <h2><b>
+                    Pradip Swarnakar
+                </b></h2>
+                Associate Professor Sociology at<br>
+                Department of Human and Social Sciences,<br>
+                Indian Institute of Technology Kanpur, India.<br/><br/>
+                Dr. Swarnakar is trained as environmental sociologist specialised in climate change policy,social network analysis and sustainability transition.
+                He is an administrative board member of an international project group "Climate Change Policy Network" which deals with climate change of 20 countries.
+                As an expert of social and dicourse network analyst, he is instrumental in policy network data analysis of India, Finland, USA, Brazil and Australia.<br><br>
+                <a class="read" href="">Read More</a>
+            </article>
+        </section>
+        <footer>
+            <span>Copyright &copy; 2020 </span>
+        </footer>
+    </body>
+</html>
+<script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+    }
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "100vw";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
