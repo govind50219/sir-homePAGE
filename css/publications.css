@@ -1,0 +1,54 @@
+.main-body{
+    width:90vw;
+    margin:0vw 5vw;
+    font-size:2.3vh;
+}
+h2{
+    font-size:200%;
+    text-align:center;
+}
+h3{
+    font-size:150%;
+}
+li a{
+    text-shadow: 0.3px 0.3px black;
+    color:#006d77;
+    text-decoration:none;
+}
+li{
+    margin:2vmin 0vmin;
+    line-height:1.5;
+}
+.menu{
+    padding-top:5vh;
+}
+.booktext{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    width:90vw;
+}
+.booktext img{
+    height: 15vh;
+}
+.booktext li{
+    width:75vw;
+}
+@media screen and (max-width:1200px){
+    .main-body{
+        font-size:2.5vw;
+    }
+    .booktext{
+        flex-direction: column-reverse;
+    }
+    .booktext img{
+        height:initial;
+         width:30vw;
+    }
+    .booktext li{
+        width:initial;
+        font-size:2.7vw;
+    }
+    }

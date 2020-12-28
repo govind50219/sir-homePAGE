@@ -4,14 +4,6 @@ article{
     margin:2vw;
     text-align:justify;
 }
-footer{
-    background-color:rgba(30,30,30,1);
-    color:rgba(150,150,150,1);
-    min-height: 5vh;
-    text-align:center;
-    font-size:2.2vh;
-    padding:3vmin;
-}
 .main-body{
     min-height:80vh;
     display: flex;
@@ -35,16 +27,19 @@ footer{
     object-fit: cover;
     margin:10vh 5vw 10vh 15vw;
   }
-.contact{
-    color:white;
-    text-decoration: none;
-}
-.contact:hover{
-    text-decoration: underline;
-}
 article a{
     color:rgb(44, 110, 119);
     text-decoration:none;
+}
+h1{
+    padding-bottom:0.5vh;
+    margin-bottom: 0vh;
+    font-size:6.5vmin;
+}
+h3{
+    padding-top:0;
+    margin-top:0;
+    font-size:3vmin;
 }
 @media screen and (max-width:1200px){
     article{
@@ -58,9 +53,6 @@ article a{
         align-items: center;
         width:100vw;;
     }
-    footer{
-        font-size:1.5vw;
-    }
     .mainphoto{
         width:70vw;
         height:70vw;
@@ -68,4 +60,14 @@ article a{
         object-fit: cover;
         margin-right:15vw;
       }
+      h1{
+        padding-bottom:0.5vh;
+        margin-bottom: 0vh;
+        font-size:9vmin;
+    }
+    h3{
+        padding-top:0;
+        margin-top:0;
+        font-size:4vmin;
+    }
 }

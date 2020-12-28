@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/maincomponent.css">
+        <link rel="stylesheet" type="text/css" href="../css/publications.css">
+        <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+        <script src="../index.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="../assets/iitklogo.jpg">
+            <img class="logomob" src="../assets/iitk-logo.svg">
+            <section class="head">
+                <a href="https://www.linkedin.com/in/pradip-swarnakar-168b9115/" target="_blank"><img class="icon"src="../assets/linkedIn.png"></a>
+                <a href="http://orcid.org/0000-0002-9532-1215" target="_blank"><img class="icon"src="../assets/orcid.png"></a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=57201863740" target="_blank"><img class="icon"src="../assets/scopus.png"></a>
+                <a href="https://scholar.google.com/citations?user=DezS250AAAAJ&hl=en&oi=ao" target="_blank"><img class="icon"src="../assets/google-scholar.png"></a>
+                <a href="https://www.researchgate.net/profile/Pradip_Swarnakar" target="_blank"><img class="icon"src="../assets/research-gate.png"></a>
+            </section>
+            <section class="navbar-win" id="navbar">
+                <a class="navwinlink" href="../index.html">About</a>
+                <div class="dropdown">
+                    <a class="navwinlink" href="">CEPR Lab <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" class="droplink">Overview</a><br>
+                            <a href="#" class="droplink">Members</a><br>
+                            <a href="#"class="droplink">Collaborators</a><br>
+                        </div>
+                    </div>
+                    <a class="navwinlink" href="">Education</a>
+                    <a class="navwinlink" href="">Experience</a>
+                    <div class="dropdown">
+                        <a class="navwinlink active" href="">Publications <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#edited-book"class="droplink">Edited Book</a><br>
+                                <a href="#journal"class="droplink">Journal Articles</a><br>
+                                <a href="#books"class="droplink">Book Chapters</a><br>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                    <a class="navwinlink" href="">Reasearch <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#"class="droplink">Grants</a><br>
+                            <a href="#"class="droplink">Supervision</a><br>
+                        </div>
+                    </div>
+                    <a class="navwinlink" href="">Awards</a>
+                    <div class="dropdown">
+                    <a class="navwinlink" href="">Talks <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#"class="droplink">Invited Lecture</a><br>
+                            <a href="#"class="droplink">Presentation</a><br>
+                        </div>
+                    </div>
+                    <a class="navwinlink" href="">Teaching</a>
+                    <div class="dropdown">
+                    <a class="navwinlink" href="">Service <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#"class="droplink">Conference and Workshops</a><br>
+                            <a href="#"class="droplink">Membership</a><br>
+                            <a href="#"class="droplink">Reviewer</a><br>
+                            <a href="#"class="droplink">Administrative Responsibilities</a><br>
+                        </div>
+                    </div>
+            </section>
+            <section class="navbar-mobile">
+                <div type="button" class="menu" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true" id="open"></i></div>
+                <section class="opennav"id="mySidenav">
+                    <div type="button" class="menu" onclick="closeNav()"><i class="fa fa-times fa-lg" aria-hidden="true" id="close" ></i></div>
+                    <a class="navmoblink" href="">About</a>
+                    <a class="navmoblink" href="">CEPR Lab <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="dropmobdown-content">
+                        <a href="#" class="dropmoblink">Overview</a><br>
+                        <a href="#" class="dropmoblink">Members</a><br>
+                        <a href="#"class="dropmoblink">Collaborators</a><br>
+                    </div>
+                    <a class="navmoblink" href="">Education</a>
+                    <a class="navmoblink" href="">Experience</a>
+                    <a class="navmoblink" href="publications.html">Publications <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="dropmobdown-content">
+                        <a href="#edited-book" class="dropmoblink">Edited Book</a><br>
+                        <a href="#journal" class="dropmoblink">Journal Articles</a><br>
+                        <a href="#books" class="dropmoblink">Book Chapters</a><br>
+                    </div>
+                    <a class="navmoblink" href="">Reasearch <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="dropmobdown-content">
+                        <a href="#"class="dropmoblink">Grants</a><br>
+                        <a href="#"class="dropmoblink">Supervision</a><br>
+                    </div>
+                    <a class="navmoblink" href="">Awards</a>
+                    <a class="navmoblink" href="">Talks <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="dropmobdown-content">
+                        <a href="#"class="dropmoblink">Invited Lecture</a><br>
+                        <a href="#"class="dropmoblink">Presentation</a><br>
+                    </div>
+                    <a class="navmoblink" href="">Teaching</a>
+                    <a class="navmoblink" href="">Service <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="dropmobdown-content">
+                        <a href="#"class="dropmoblink">Conference and Workshops</a><br>
+                        <a href="#"class="dropmoblink">Membership</a><br>
+                        <a href="#"class="dropmoblink">Reviewer</a><br>
+                        <a href="#"class="dropmoblink">Administrative Responsibilities</a><br>
+                    </div>
+                    
+                </section>
+            </section>
+        </header>
+        <section class="main-body">
+            <h2>Publications</h2>
+            <h3 id="edited-book">Edited Book</h3>
+            <ul class="booktext">
+             <li >Swarnakar, P., Zavestoski, S. and Pattnaik, B.K. (2017).<em><a href="https://us.sagepub.com/en-us/nam/%E2%80%98bottom-up%E2%80%99-approaches-in-governance-and-adaptation-for-sustainable-development/book258440" target="_blank" title="Learn more about Bottom-up Approaches in Governance and Adaptation for Sustainable Development">
+                Bottom-up Approaches in Governance and Adaptation for Sustainable Development: CaseStudies from India and Bangladesh</a></em>. New Delhi, India: SAGE Publications.
+            </li> 
+            <img src="../assets/book.jpg">
+            </ul>
+            <h3>Guest Editorial</h3>
+            <ul>
+             <li>Swarnakar, P.,Zavestoski, S. (2014) Special Issue on <a href="http://www.inderscience.com/info/inarticletoc.php?jcode=ijisdyear=2014vol=8issue=4">Environment and Technology: Mediating Factors toward Sustainable Development</a>, <em>
+                 International Journal of Innovation and Sustainable Development,</em>Volume 8, No 4. 331-426.</span></li>
+            </ul>
+            <h3 id="journal">Journal Articles</h3>
+            <ul>
+             <li>Kumar, A., Mallick, S., Swarnakar, P. (2020).<a
+                 href="http://www.jscires.org/sites/default/files/JScientometRes-9-1-29.pdf">Mapping
+                 Scientific Collaboration: A Bibliometric Study of Rice Crop Research in
+                 India</a>, <i>Journal of Scientometric Research</i>, <i>9</i>(1), 29-39.</li>
+             <li>Kumar, A., Swarnakar, P.,
+                 Jaiswal, K.,  Kurele, R. (2020). <a
+                 href="https://www.sciencedirect.com/science/article/pii/S0378437119316218">SMIR
+                 model for controlling the spread of information in social networking sites</a>.
+                 <i>Physica A: Statistical Mechanics and its Applications</i>. <a
+                 href="https://doi.org/10.1016/j.physa.2019.122978">https://doi.org/10.1016/j.physa.2019.122978</a>
+                 </li>
+             <li>Kukkonen, A., Ylä-Anttila, T.,
+                 Swarnakar, P., Broadbent, J., Lahsen, M.,  Stoddart, M. C. (2018). <a
+                 href="https://www.sciencedirect.com/science/article/pii/S1462901117309668">International
+                 organizations, advocacy coalitions, and domestication of global norms:
+                 Debates on climate change in Canada, the US, Brazil, and India</a>. <em>Environmental Science  Policy</em>,
+                 <em>81</em>, 54-62.</li>
+             <li>Ylä-Anttila, T., 
+                 Swarnakar, P. (2017) <a
+                 href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1468-4446.12251">Crowding-in:
+                 How and why Indian civil society organizations mobilized on climate
+                 change.</a> <em>British
+                 Journal of Sociology</em>, <em>68</em>(2),
+                 273-292.</li>
+             <li>Broadbent, J, Sonnett, J. (…),
+                 Swarnakar, P (…), Zhengyi, S.  Hasegawa, K. (2016) Conflicting
+                 Climate Change Frames in World Society, <em>Socius:
+                 Sociological Research for a Dynamic World</em>. DOI: <a
+                 href="https://doi.org/10.1177/2378023116670660">https://doi.org/10.1177/2378023116670660</a></li>
+             <li>Swarnakar, P., Kumar, A.,
+                 Tyagi, H. (2017)<a
+                 href="https://www.researchgate.net/profile/Pradip_Swarnakar/publication/317123448_Network_dynamics_in_friend_recommendation_a_study_of_Indian_engineering_students/links/5a555cdc45851547b1bd64ce/Network-dynamics-in-friend-recommendation-a-study-of-Indian-engineering-students.pdf">
+                 Network Dynamics in Friend Recommendation: A Study of Indian Engineering
+                 Students.</a> <em>International
+                 Journal of Information Technology and Management</em>, <em>16</em>(3), 287-300.</li>
+             <li>Swarnakar, P., Kumar, A.,
+                 Kumar, S. (2016) <a
+                 href="https://www.researchgate.net/profile/Pradip_Swarnakar/publication/307092111_Why_generation_Y_prefers_online_shopping_a_study_of_young_customers_of_India/links/581964a408ae50812f5df186.pdf">Why
+                 generation Y prefers online shopping: A study of young customers of India.</a>
+                 <em>International Journal of
+                 Business Forecasting and Marketing Intelligence</em>, <em>2</em>(3), 215-232.</li>
+             <li>Swarnakar, P., Kumar, A.,
+                 Wadhwa, M. (2016)<a
+                 href="https://www.researchgate.net/profile/Pradip_Swarnakar/publication/304495895_Investigating_preferred_relationship_through_fuzzy_sets_in_social_networking_sites/links/5819648108ae50812f5df17f/Investigating-preferred-relationship-through-fuzzy-sets-in-social-networking-sites.pdf">
+                 Investigating preferred relationship through fuzzy sets in Facebook.</a> <em>International Journal of Web Based
+                 Communities</em>, <em>12</em>(2),
+                 165-179.</li>
+             <li>Ylä-Anttila, T., Swarnakar, P,
+                 Javed, S., Oivo, K. (2015).  <a
+                 href="https://tuhat.helsinki.fi/portal/files/58442564/Yla_Anttila_How_To_Avoid_Seeing_Like_a_State_EPW.pdf">How
+                 to Avoid Seeing Like a State: Learning from CSOs</a><em><a
+                 href="https://tuhat.helsinki.fi/portal/files/58442564/Yla_Anttila_How_To_Avoid_Seeing_Like_a_State_EPW.pdf">.</a>
+                 Economic and Political Weekly</em>, <em><span style='font-family:
+                 "Arial",sans-serif'>50</em>(17), 14-16.</li>
+             <li>Swarnakar, P.,  Thahir, S.
+                 (2015). <a
+                 href="http://journals.sagepub.com/doi/abs/10.1177/0972150914553530">Acculturation
+                 of New Technology: The Business Success of Lee Kum Kee.</a> <em>Global Business Review</em>,
+                 <em>16</em>(1),
+                 196-198.</li>
+             <li>Broadbent, J., Yun, S. J., Ku, D.,
+                 Ikeda, K., Satoh, K., Pellissery, S., Swarnakar, P., Lin, T. L., Lee, H.
+                 C.,  Jin, J. (2013). <a
+                 href="https://gsj.stonybrook.edu/article/asian-societies-and-climate-change-the-variable-diffusion-of-global-norms/">Asian
+                 societies and climate change: the variable diffusion of global norms</a>, <em>Globality Studies Journal</em>
+                 (GSJ no. 32). Online:<a href=" http://globality.cc.stonybrook.edu/?p=681"> http://globality.cc.stonybrook.edu/?p=681</a></li>
+             <li>Swarnakar, P.,  Sharma, A.
+                 K. (2009). Risk, awareness and response: An exploratory study of people’s
+                 attitude towards groundwater arsenic contamination in West Bengal, India, <em>Eastern Anthropologist</em>,
+                 <em>62</em>(1), 61-83.</li>
+            </ul>
+            <h3 id="books">Book Chapters</h3>
+            <ul >
+             <li  >Swarnakar, P. (2019) <a
+                 href="https://oxford.universitypressscholarship.com/view/10.1093/oso/9780199498734.001.0001/oso-9780199498734-chapter-15">Climate
+                 Change, Civil Society, and Social Movement in India</a> <i>In</i> India in
+                 a Warming World: Integrating Climate Change and Development edited by
+                 Navroz Dubash, Oxford University Press, New Delhi. <i>For free download
+                 visit <a
+                 href="https://oxford.universitypressscholarship.com/view/10.1093/oso/9780199498734.001.0001/oso-9780199498734-chapter-15">here</a></i></li>
+             <li  >Zavestoski, S.  Swarnakar,
+                 P. (2017) Governance for Sustainable Development in the Anthropocene. in <em>Bottom-up Approaches in Governance
+                 and Adaptation for Sustainable Development: Case Studies from India and
+                 Bangladesh</em> edited by P. Swarnakar, S. Zavestoski,  B. K.
+                 Pattnaik. SAGE Publications, New Delhi.</li>
+             <li  >Zavestoski, S.  Swarnakar,
+                 P. (2017) Neither ‘Top-down’ nor ‘Bottom-up’: A ‘Middle-out’ Alternative
+                 to Sustainable Development in <em>Bottom-up
+                 Approaches in Governance and Adaptation for Sustainable Development: Case
+                 Studies from India and Bangladesh</em> edited by P. Swarnakar, S.
+                 Zavestoski,  B. K. Pattnaik. SAGE Publications, New Delhi.</li>
+             <li  >Swarnakar, P.,  Sharma, A.
+                 K. (2011). Environmental concern: Application of new environmental
+                 paradigm scale in Rural West Bengal in <em>Migration,
+                 Health and Development</em>, edited by S. Lahiri, B Paswan and K C
+                 Das, Rawat Publications, New Delhi/Jaipur. pp 170-201.</li>
+             <li  >Swarnakar, P.,  Sharma, A.
+                 K. (2009). Understanding environmental crisis: Locating common grounds in
+                 principles and practices between deep and social ecologists in <em>Understanding the Global
+                 Environment</em> edited by Samir Dasgupta, Pearson Longman, New
+                 Delhi. pp 119-136. </li>
+            </ul>
+        </section>
+        <footer>
+            <span>
+            Office: Room No 102, Block A, First Floor, Old SAC Building, IIT Kanpur<br><br>
+            Postal correspondence: FB 613, Department of Humanities and Social Sciences, Indian Institute of Technology Kanpur, Kanpur 209016<br><br>
+
+            Contact: <a class="contact" target="_blank" href="mailto:spradip@iitk.ac.in">spradip@iitk.ac.in</a>, <a class="contact" target="_blank" href="mailto:swarnakar@gmail.com">swarnakar@gmail.com</a>  Phone: <a class="contact" href="tel:+91-512-259-2063">+91-512-259-2063</a><br><br>
+            <span>Copyright &copy; 2020 </span><br><br>
+            </span>
+        </footer>
+    </body>
+</html>

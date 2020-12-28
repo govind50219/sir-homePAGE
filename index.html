@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="css/maincomponent.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <script src="index.js"></script>
     </head>
     <body>
         <header>
@@ -17,7 +18,7 @@
                 <a href="https://www.researchgate.net/profile/Pradip_Swarnakar" target="_blank"><img class="icon"src="assets/research-gate.png"></a>
             </section>
             <section class="navbar-win" id="navbar">
-                <a class="navwinlink" href="">About</a>
+                <a class="navwinlink active" href="">About</a>
                 <div class="dropdown">
                     <a class="navwinlink" href="">CEPR Lab <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <div class="dropdown-content">
@@ -29,11 +30,11 @@
                     <a class="navwinlink" href="">Education</a>
                     <a class="navwinlink" href="">Experience</a>
                     <div class="dropdown">
-                        <a class="navwinlink" href="">Publications <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <a class="navwinlink" href="modules/publications.html">Publications <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                             <div class="dropdown-content">
-                                <a href="#"class="droplink">Edited Book</a><br>
-                                <a href="#"class="droplink">Journal Articles</a><br>
-                                <a href="#"class="droplink">Book Chapters</a><br>
+                                <a href="modules/publications.html#edited-book"class="droplink">Edited Book</a><br>
+                                <a href="modules/publications.html#journal"class="droplink">Journal Articles</a><br>
+                                <a href="modules/publications.html#books"class="droplink">Book Chapters</a><br>
                             </div>
                     </div>
                     <div class="dropdown">
@@ -75,11 +76,11 @@
                     </div>
                     <a class="navmoblink" href="">Education</a>
                     <a class="navmoblink" href="">Experience</a>
-                    <a class="navmoblink" href="">Publications <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <a class="navmoblink" href="modules/publications.html">Publications <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                     <div class="dropmobdown-content">
-                        <a href="#"class="dropmoblink">Edited Book</a><br>
-                        <a href="#"class="dropmoblink">Journal Articles</a><br>
-                        <a href="#"class="dropmoblink">Book Chapters</a><br>
+                        <a href="modules/publications.html#edited-books"class="dropmoblink">Edited Book</a><br>
+                        <a href="modules/publications.html#journal"class="dropmoblink">Journal Articles</a><br>
+                        <a href="modules/publications.html#books"class="dropmoblink">Book Chapters</a><br>
                     </div>
                     <a class="navmoblink" href="">Reasearch <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                     <div class="dropmobdown-content">
@@ -106,10 +107,10 @@
         </header>
         <section class="main-body">
             <article>
-                <h2><b>
+                <h1><b>
                     Pradip Swarnakar
-                </b></h2>
-                Associate Professor<br><br>
+                </b></h1>
+                <b><h3>Associate Professor</h3></b><br>
                 Pradip Swarnakar is an Associate Professor of Sociology at the Department of Humanities and Social Sciences,
                 Indian Institute of Technology Kanpur, India. Dr. Swarnakar is an environmental sociologist specialized in climate change policy,
                 social network analysis, and sustainability transition. He obtained his doctoral degree from IIT Kanpur in 2008.
@@ -136,21 +137,3 @@
         </footer>
     </body>
 </html>
-<script>
-    window.onscroll = function() {myFunction()};
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
-    }
-    function openNav() {
-  document.getElementById("mySidenav").style.width = "100vw";
-}
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
