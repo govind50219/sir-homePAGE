@@ -1,0 +1,121 @@
+  <!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/maincomponent.css">
+        <link rel="stylesheet" type="text/css" href="../css/publications.css">
+        <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+        <script src="../index.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="../assets/iitklogo.jpg">
+            <img class="logomob" src="../assets/iitk-logo.svg">
+            <section class="head">
+                <a href="https://www.linkedin.com/in/pradip-swarnakar-168b9115/" target="_blank"><img class="icon"src="../assets/linkedIn.png"></a>
+                <a href="http://orcid.org/0000-0002-9532-1215" target="_blank"><img class="icon"src="../assets/orcid.png"></a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=57201863740" target="_blank"><img class="icon"src="../assets/scopus.png"></a>
+                <a href="https://scholar.google.com/citations?user=DezS250AAAAJ&hl=en&oi=ao" target="_blank"><img class="icon"src="../assets/google-scholar.png"></a>
+                <a href="https://www.researchgate.net/profile/Pradip_Swarnakar" target="_blank"><img class="icon"src="../assets/research-gate.png"></a>
+            </section>
+            <section class="navbar-win" id="navbar">
+                <a class="navwinlink" href="../index.html">About</a>
+                <div class="dropdown">
+                    <a class="navwinlink active" href="ceprlab.html">CEPR Lab <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#overview" class="droplink">Overview</a><br>
+                            <a href="#members" class="droplink">Members</a><br>
+                            <a href="#collaborators"class="droplink">Collaborators</a><br>
+                        </div>
+                    </div>
+                    <a class="navwinlink" href="education.html">Education</a>
+                    <a class="navwinlink" href="experience.html">Experience</a>
+                    <div class="dropdown">
+                        <a class="navwinlink" href="publications.html">Publications <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-content">
+                                <a href="publications.html#edited-book"class="droplink">Edited Book</a><br>
+                                <a href="publications.html#journal"class="droplink">Journal Articles</a><br>
+                                <a href="publications.html#books"class="droplink">Book Chapters</a><br>
+                            </div>
+                    </div>
+                    <div class="dropdown">
+                    <a class="navwinlink" href="research.html">Reasearch <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="research.html#grants"class="droplink">Grants</a><br>
+                            <a href="research.html#supervision"class="droplink">Supervision</a><br>
+                        </div>
+                    </div>
+                    <a class="navwinlink" href="awards.html">Awards</a>
+                    <div class="dropdown">
+                    <a class="navwinlink" href="talks.html">Talks <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="talks.html#lecture"class="droplink">Invited Lecture</a><br>
+                            <a href="talks.html#presebtation"class="droplink">Presentation</a><br>
+                        </div>
+                    </div>
+                    <a class="navwinlink" href="teaching.html">Teaching</a>
+                    <div class="dropdown">
+                    <a class="navwinlink" href="service.html">Service <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <div class="dropdown-content">
+                            <a href="service.html#conference-and-workshops"class="droplink">Conference and Workshops</a><br>
+                            <a href="service.html#membership"class="droplink">Membership</a><br>
+                            <a href="service.html#reviewer"class="droplink">Reviewer</a><br>
+                            <a href="service.html#administrative-responsibilities"class="droplink">Administrative Responsibilities</a><br>
+                        </div>
+                    </div>
+            </section>
+            <section class="navbar-mobile">
+                <div type="button" class="menu" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true" id="open"></i></div>
+                <section class="opennav"id="mySidenav">
+                    <div type="button" class="menu" onclick="closeNav()"><i class="fa fa-times fa-lg" aria-hidden="true" id="close" ></i></div>
+                    <a class="navmoblink" href="../index.html">About</a>
+                    <a class="navmoblink" href="ceprlab.html">CEPR Lab <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="dropmobdown-content">
+                        <a href="#overview" class="dropmoblink"onclick="closeNav()">Overview</a><br>
+                        <a href="#members" class="dropmoblink"onclick="closeNav()">Members</a><br>
+                        <a href="#collaborators"class="dropmoblink" onclick="closeNav()">Collaborators</a><br>
+                    </div>
+                    <a class="navmoblink" href="education.html">Education</a>
+                    <a class="navmoblink" href="experience.html">Experience</a>
+                    <a class="navmoblink" href="publications.html">Publications <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="dropmobdown-content">
+                        <a href="publications.html#edited-books"class="dropmoblink"onclick="closeNav()">Edited Book</a><br>
+                        <a href="publications.html#journal"class="dropmoblink"onclick="closeNav()">Journal Articles</a><br>
+                        <a href="publications.html#books"class="dropmoblink"onclick="closeNav()">Book Chapters</a><br>
+                    </div>
+                    <a class="navmoblink" href="research.html">Reasearch <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="dropmobdown-content">
+                        <a href="research.html#grants"class="dropmoblink" onclick="closeNav()">Grants</a><br>
+                        <a href="research.html#supervision"class="dropmoblink" onclick="closeNav()">Supervision</a><br>
+                    </div>
+                    <a class="navmoblink" href="awards.html">Awards</a>
+                    <a class="navmoblink" href="talks.html">Talks <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="dropmobdown-content">
+                        <a href="talks.html#lecture"class="dropmoblink" onclick="closeNav()">Invited Lecture</a><br>
+                        <a href="talks.html#presentation"class="dropmoblink" onclick="closeNav()">Presentation</a><br>
+                    </div>
+                    <a class="navmoblink" href="teaching.html">Teaching</a>
+                    <a class="navmoblink" href="service.html">Service <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="dropmobdown-content">
+                        <a href="service.html#conference-and-workshops"class="dropmoblink" onclick="closeNav()">Conference and Workshops</a><br>
+                        <a href="service.html#membership"class="dropmoblink" onclick="closeNav()">Membership</a><br>
+                        <a href="service.html#reviewer"class="dropmoblink" onclick="closeNav()">Reviewer</a><br>
+                        <a href="service.html#administrative-responsibilities"class="dropmoblink" onclick="closeNav()">Administrative Responsibilities</a><br>
+                    </div>
+                    
+                </section>
+            </section>
+        </header>
+        <section class="main-body">
+            
+        </section>
+        <footer>
+            <span>
+            Office: Room No 102, Block A, First Floor, Old SAC Building, IIT Kanpur<br><br>
+            Postal correspondence: FB 613, Department of Humanities and Social Sciences, Indian Institute of Technology Kanpur, Kanpur 209016<br><br>
+
+            Contact: <a class="contact" target="_blank" href="mailto:spradip@iitk.ac.in">spradip@iitk.ac.in</a>, <a class="contact" target="_blank" href="mailto:swarnakar@gmail.com">swarnakar@gmail.com</a>  Phone: <a class="contact" href="tel:+91-512-259-2063">+91-512-259-2063</a><br><br>
+            <span>Copyright &copy; 2020 </span><br><br>
+            </span>
+        </footer>
+    </body>
+</html>
