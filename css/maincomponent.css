@@ -86,14 +86,15 @@ header{
 .dropdown-content{
   display:none;
   background-color:white;
+  padding:0vh 1vmin;
   width:10vw;
-  padding:0vh 3vmin;
   font-size:2.6vh;
   flex-direction: column;
-  justify-content: space-evenly;
-  box-shadow:2px 2px 5px rgba(0,0,0,0.5);
-  transform: translate(-2vw,-2vh);
+  justify-content: center;
+  box-shadow:2px 2px 5px rgba(0,0,0,0.7);
+  transform: translate(0vw,-2vh);
   transition: 0.2s;
+  font-weight: 600;
 }
 .dropdown-content a{
   text-decoration:none;
@@ -103,6 +104,45 @@ header{
   display:flex;
   position: absolute;
   transition-delay:0s;
+}
+.dropdown:hover .navwinlink{
+  color: #000;
+}
+.dropdown:hover .navwinlink:after{
+  content: "";
+    display: block;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background:black;
+    width: 100%;
+}
+.droplink{
+  color:rgba(0,0,0,0.5);
+  margin:0vh 3vmin;
+}
+.droplink{
+  margin:0.5vh 1vw;
+  color:rgba(0,0,0,0.5);
+  text-decoration:none;
+  font-weight: 600;
+}
+.droplink:after {   
+  content: "";
+  display: block;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background:black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.droplink:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.droplink:hover{
+  color:rgba(0,0,0,1);
 }
 .sticky {
     position: fixed;
@@ -150,7 +190,7 @@ header{
     .navbar-mobile{
         display:flex;
         flex-direction:column;
-        font-size:3vh;
+        font-size:2.5vh;
         transition: 0.5s;
         position:fixed;
         top:0;
@@ -179,7 +219,17 @@ header{
         position: absolute;
         top:3vh;
         right:5vw;
-
+    }
+    .dropmobdown-content{
+      background-color:black;
+      box-shadow:1px 1px 10px rgba(0,0,0,1);
+      width:70vw;
+      text-align:center;
+      padding:1vw;
+    }
+    .dropmoblink{
+      color:white;
+      text-decoration: none;
     }
     #open{
       position: fixed;

@@ -44,6 +44,7 @@ footer{
 }
 article a{
     color:rgb(44, 110, 119);
+    text-decoration:none;
 }
 @media screen and (max-width:1200px){
     article{
