@@ -29,9 +29,6 @@ li{
     line-height:2;
     display:block;
 }
-.menu{
-    padding-top:5vh;
-}
 .book{
     height: 15vh;
     margin:0vh 2vw;
@@ -43,7 +40,8 @@ li{
 }
 .aicon{
     height:5vmin;
-    transform: translateY(2vmin);
+    position: relative;
+    top:2vmin;
 }
 @media screen and (max-width:1200px){
     .book{
@@ -57,6 +55,5 @@ li{
     }
     .aicon{
         height:6vmin;
-        transform: translateY(2vmin);
     }
     }

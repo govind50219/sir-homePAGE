@@ -1,0 +1,38 @@
+.main-body{
+    width:90vw;
+    margin:0vw 5vw;
+    font-size:2.5vh;
+}
+h2{
+    font-size:175%;
+    text-align:center;
+}
+h3{
+    font-size:125%;
+}
+h4{
+    font-size:112.5%;
+    margin-left:2vmax;
+}
+.subhead{
+    font-size:105%;
+    margin:0;
+    font-weight:600;
+}
+ul{
+    margin-left:5vmin;
+}
+li a{
+    text-shadow: 0.3px 0.3px black;
+    color:#006d77;
+    text-decoration:none;
+}
+li{
+    margin:3vmin 0vmin;
+    line-height:2;
+}
+@media screen and (max-width:1200px){
+    .main-body{
+        font-size:2.7vw;
+    }
+    }

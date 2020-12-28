@@ -3,6 +3,7 @@ article{
     font-size:2.3vh;
     margin:2vw;
     text-align:justify;
+    line-height: 1.5;
 }
 .main-body{
     min-height:80vh;
@@ -35,6 +36,7 @@ h1{
     padding-bottom:0.5vh;
     margin-bottom: 0vh;
     font-size:6.5vmin;
+    line-height: 1;
 }
 h3{
     padding-top:0;
