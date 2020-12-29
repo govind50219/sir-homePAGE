@@ -18,7 +18,8 @@ h2{
     flex-direction: row;
     align-items: center;
     margin:2.5vw;
-    margin-left:30vw;
+    margin-left:27vw;
+    font-size:2.8vh;
 }
 .block img{
     height:15vh;
@@ -34,9 +35,11 @@ h2{
 @media screen and (max-width:1200px){
     .main-body{
         font-size:2.8vw;
+        width:95vw;
     }
     .block{
-        margin-left:10vw;
+        margin-left:0vw;
+        font-size:3vw;
     }
     .block img{
         height:initial;

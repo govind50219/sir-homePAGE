@@ -42,6 +42,7 @@ h3{
     padding-top:0;
     margin-top:0;
     font-size:3vmin;
+    padding-bottom:2vh;
 }
 @media screen and (max-width:1200px){
     article{
@@ -60,16 +61,18 @@ h3{
         height:70vw;
         object-position: top;
         object-fit: cover;
-        margin-right:15vw;
+        margin:5vh 15vw 0vh 15vw;
       }
       h1{
         padding-bottom:0.5vh;
         margin-bottom: 0vh;
         font-size:9vmin;
+        margin-top:2vh;
     }
     h3{
         padding-top:0;
         margin-top:0;
         font-size:4vmin;
+        margin-bottom: 2vh;
     }
 }
