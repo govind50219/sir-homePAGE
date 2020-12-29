@@ -1,0 +1,45 @@
+.main-body{
+    width:90vw;
+    margin:0vw 5vw;
+    font-size:2.4vh;
+    line-height: 1.5;
+    z-index:1;
+}
+.body{
+    display:flex;
+    flex-direction: column;
+}
+h2{
+    font-size:175%;
+    text-align:center;
+}
+.block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:2.5vw;
+    margin-left:30vw;
+}
+.block img{
+    height:15vh;
+    float:left;
+    margin-right:3vmin;
+}
+.block b{
+    font-size:130%;
+}
+.block a{
+    color:black;
+}
+@media screen and (max-width:1200px){
+    .main-body{
+        font-size:2.8vw;
+    }
+    .block{
+        margin-left:10vw;
+    }
+    .block img{
+        height:initial;
+        width:15vw;
+    }
+    }
