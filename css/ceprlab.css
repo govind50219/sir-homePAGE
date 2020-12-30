@@ -1,7 +1,7 @@
 .main-body{
     width:90vw;
     margin:0vw 5vw;
-    font-size:2.4vh;
+    font-size:2.6vh;
     line-height: 1.5;
 }
 h2{
@@ -16,15 +16,14 @@ h2{
 	text-align: center;
 	padding: 3vh 0vh ;
 	width:15vw;
-	font-size:2.5vh;
-    display:inline-block;
-    margin-top:5vmin;
+  display:inline-block;
+  margin-top:5vmin;
 }
-.card img{
-	width:20vh;
-	height:20vh;
+.outer-img{
+	width:13vw;
+	height:13vw;
 	object-fit: cover;
-    object-position: center;
+  object-position: center;
 	border-radius: 10%;
 	border:1px solid white;
 	box-shadow:0.2vh 0.2vh 1vh rgba(0,0,0,1);
@@ -38,11 +37,11 @@ h2{
 	text-decoration:none;
 }
   ul li a {
-	width: 5vh;
-	height: 5vh;
+	width: 6vh;
+	height: 6vh;
 	background-color: #fff;
 	text-align: center;
-	font-size: 3vh;
+	font-size: 3.3vh;
 	display: block;
 	border-radius: 50%;
 	position: relative;
@@ -98,7 +97,6 @@ h2{
       color:white;
       padding:2vmin;
       font-size:2.4vh;
-      font-family: 'lato';
       border-radius:2vh;
       margin:1vmin;
       border:2px solid rgba(0, 123, 255,0.5) ;
@@ -142,8 +140,15 @@ h2{
     margin-bottom:2vmin;
   }
 .inner-img{
-    float:left;
-    margin:2vmin;
+  float:left;
+  margin:2vmin;
+  width:25vw;
+	height:25vw;
+	object-fit: cover;
+  object-position: center;
+	border-radius: 10%;
+	border:1px solid white;
+	box-shadow:0.2vh 0.2vh 1vh rgba(0,0,0,1);
 }
 @media screen and (max-width:1200px){
     .main-body{
@@ -156,5 +161,26 @@ h2{
     }
     .box-content{
         width:90vw;
+    }
+    .outer-img{
+      width:60vw;
+      height:60vw;
+    }
+    .inner-img{
+      width:70vw;
+      height:70vw;
+      float: initial;
+      margin-left:10vw;
+    }
+    .card{
+      font-size:6vw;
+    }
+    .readmore{
+      font-size:5vw;
+    }
+    ul li a{
+      font-size:4vh;
+      width:7vh;
+	    height:7vh;
     }
 }
