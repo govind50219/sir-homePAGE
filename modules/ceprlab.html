@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../css/maincomponent.css">
-        <link rel="stylesheet" type="text/css" href="../css/publications.css">
+        <link rel="stylesheet" type="text/css" href="../css/ceprlab.css">
         <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
         <script src="../index.js"></script>
     </head>
@@ -49,7 +49,7 @@
                     <a class="navwinlink" href="talks.html">Talks <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                         <div class="dropdown-content">
                             <a href="talks.html#lecture"class="droplink">Invited Lecture</a><br>
-                            <a href="talks.html#presebtation"class="droplink">Presentation</a><br>
+                            <a href="talks.html#presentation"class="droplink">Presentation</a><br>
                         </div>
                     </div>
                     <a class="navwinlink" href="teaching.html">Teaching</a>
@@ -106,7 +106,37 @@
             </section>
         </header>
         <section class="main-body">
-            
+            <div class="card">
+				<img src="../assets/ceprlab/Avinash Kumar.JPG">
+				<p class="name">Dr. Avinash Kumar</p>
+				<p class="post">Post-Doc</p>
+				<ul>
+					<li>
+					  <a target="_blank" href="">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+					</li>
+					<li>
+					  <a target="_blank" href="mailto:avinasholmes@gmail.com "><i class="fa fa-envelope-o" aria-hidden="true"></i></i></a></li>
+                </ul>
+                <button class="readmore" onclick="openText()">Read More</button>
+                <div class="box" id="box">
+                    <div class="box-content">
+                        <div type="button" class="close" onclick="closeText()"><i class="fa fa-times fa-lg" aria-hidden="true"></i></div>
+                    <img class="inner-img" src="../assets/ceprlab/Avinash Kumar.JPG">
+                    <span class="text">
+                        Avinash Kumar, currently a doctoral candidate in Development Studies at the Department of Humanities and Social Sciences,
+                        Indian Institute of Technology Guwahati, India, obtained Master of Arts degree in Development Studies from IIT Guwahati
+                        for the MA dissertation titled, “Industrialisation of Rice Production: A Study in Selected Scientific Institutions in Bihar”.
+                         This empirical study carried out in Bihar attempted to elicit the responses of scientists from selected scientific
+                         institutions coming under the aegis of the Indian Council of Agricultural Research (ICAR) and the State Agricultural
+                         University (SAU) of the Government of India. From the sociology of science and technology perspective, this study captured
+                         the production of knowledge in rice and its application in an economically backward state like Bihar.
+                        By focusing on a single crop (rice), the study reflected on the diverse ways in which scientific research and technology development in Bihar are influenced by a variety of social, economic, political and institutional contexts. Further, this study also investigated the nature of scientific collaboration operating among scientists, the state and the market in the field of rice research in Bihar. 
+                    </span>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
             <span>
@@ -119,3 +149,17 @@
         </footer>
     </body>
 </html>
+<script>
+    function openText(){
+        document.getElementById("box").style.display = "flex";
+    }
+    function closeText(){
+        document.getElementById("box").style.display = "none";
+    }
+    var modal= document.getElementById("box");
+    window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
