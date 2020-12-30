@@ -1,7 +1,7 @@
 .main-body{
     width:90vw;
     margin:0vw 5vw;
-    font-size:2.6vh;
+    font-size:2.5vh;
     line-height: 1.5;
 }
 h2{
@@ -11,17 +11,16 @@ h2{
 .card{
 	background-color:rgba(0,0,0,0.7);
 	box-shadow:0vh 0vh 2vh rgba(0,0,0,0.5);
-	margin-left:5vw;
 	margin-bottom: 2vh;
 	text-align: center;
-	padding: 3vh 0vh ;
-	width:15vw;
+	padding: 1vmin 0vh ;
+	width:25vw;
   display:inline-block;
   margin-top:5vmin;
 }
 .outer-img{
-	width:13vw;
-	height:13vw;
+	width:23vw;
+	height:23vw;
 	object-fit: cover;
   object-position: center;
 	border-radius: 10%;
@@ -30,18 +29,19 @@ h2{
 	
 } 
 .card p{
-	color:white;
+  color:white;
+  margin:0;
 }
 .card a{
 	color:white;
 	text-decoration:none;
 }
   ul li a {
-	width: 6vh;
-	height: 6vh;
+	width: 5vh;
+	height: 5vh;
 	background-color: #fff;
 	text-align: center;
-	font-size: 3.3vh;
+	font-size: 2.6vh;
 	display: block;
 	border-radius: 50%;
 	position: relative;
@@ -53,7 +53,9 @@ h2{
 	justify-content: space-evenly;
 	width:100%;
 	padding-inline-start:0px;
-	  text-shadow:initial;
+  text-shadow:initial;
+  align-items: center;
+  margin:0;
   }
   ul li{
 	  list-style: none;
@@ -95,11 +97,11 @@ h2{
   .readmore{
       background-color: rgba(0, 123, 255,0.5);
       color:white;
-      padding:2vmin;
-      font-size:2.4vh;
+      font-size:2.5vh;
       border-radius:2vh;
       margin:1vmin;
       border:2px solid rgba(0, 123, 255,0.5) ;
+      height:5vh;
   }
   .box {
     display: none; 
@@ -141,7 +143,7 @@ h2{
   }
 .inner-img{
   float:left;
-  margin:2vmin;
+  margin:5vmin;
   width:25vw;
 	height:25vw;
 	object-fit: cover;
@@ -152,7 +154,7 @@ h2{
 }
 @media screen and (max-width:1200px){
     .main-body{
-        font-size:2.8vw;
+        font-size:2.7vw;
         width:95vw;
     }
     .card{
@@ -172,15 +174,11 @@ h2{
       float: initial;
       margin-left:10vw;
     }
-    .card{
-      font-size:6vw;
-    }
     .readmore{
-      font-size:5vw;
+      font-size:2.4vh;
     }
     ul li a{
-      font-size:4vh;
-      width:7vh;
-	    height:7vh;
+      width:5vh;
+	    height:5vh;
     }
 }

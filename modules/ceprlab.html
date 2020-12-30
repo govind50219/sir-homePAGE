@@ -117,12 +117,14 @@
 					</a>
 					</li>
 					<li>
-					  <a target="_blank" href="mailto:avinasholmes@gmail.com "><i class="fa fa-envelope-o" aria-hidden="true"></i></i></a></li>
+                      <a target="_blank" href="mailto:avinasholmes@gmail.com "><i class="fa fa-envelope-o" aria-hidden="true"></i></i></a></li>
+                    <li>
+                        <button class="readmore" onclick="document.getElementById('box').style.display = 'flex';">Read More</button>
+                    </li> 
                 </ul>
-                <button class="readmore" onclick="openText()">Read More</button>
                 <div class="box" id="box">
                     <div class="box-content">
-                        <div type="button" class="close" onclick="closeText()"><i class="fa fa-times fa-lg" aria-hidden="true"></i></div>
+                    <div type="button" class="close" onclick="document.getElementById('box').style.display = 'none';"><i class="fa fa-times fa-lg" aria-hidden="true"></i></div>
                     <img class="inner-img" src="../assets/ceprlab/Avinash Kumar.JPG">
                     <span class="text">
                         Avinash Kumar, currently a doctoral candidate in Development Studies at the Department of Humanities and Social Sciences,
@@ -149,17 +151,3 @@
         </footer>
     </body>
 </html>
-<script>
-    function openText(){
-        document.getElementById("box").style.display = "flex";
-    }
-    function closeText(){
-        document.getElementById("box").style.display = "none";
-    }
-    var modal= document.getElementById("box");
-    window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
