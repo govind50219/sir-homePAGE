@@ -29,8 +29,9 @@ article{
     margin:10vh 5vw 10vh 15vw;
   }
 article a{
-    color:rgb(44, 110, 119);
+    color:#540b0e;
     text-decoration:none;
+    font-weight: 600;
 }
 h1{
     padding-bottom:0.5vh;
@@ -42,7 +43,9 @@ h3{
     padding-top:0;
     margin-top:0;
     font-size:3vmin;
-    padding-bottom:2vh;
+    padding-bottom:0vh;
+    margin-bottom: 5vh;
+    text-transform: unset !important;
 }
 @media screen and (max-width:1200px){
     article{

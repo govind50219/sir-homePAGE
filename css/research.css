@@ -23,8 +23,8 @@ ul{
     margin-left:5vmin;
 }
 li a{
-    text-shadow: 0.3px 0.3px black;
-    color:#006d77;
+    font-weight: 600;
+    color:#540b0e;
     text-decoration:none;
 }
 li{
