@@ -191,6 +191,11 @@ h4{
 .slick-prev{
   margin-right:7vw;
 }
+.overview a{
+    font-weight: 600;
+    color:#540b0e;
+    text-decoration:none;
+}
 @media screen and (max-width:1200px){
     .main-body{
         width:90vw;
