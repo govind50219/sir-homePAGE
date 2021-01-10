@@ -100,7 +100,7 @@ header{
   justify-content: center;
   align-items: center;
   box-shadow:2px 2px 5px rgba(0,0,0,0.7);
-  transform: translate(0vw,4.3vh);
+  transform: translate(0vw,4.5vh);
   transition: 0.2s;
   font-weight: 600;
   padding-top:1vh;
@@ -257,12 +257,9 @@ header{
         font-size: 7vw;
     }
     .dropmobdown-content{
-      background-color:rgba(255, 255, 255,0.25);
-      box-shadow:1px 1px  rgba(0,0,0,1);
       width:70vw;
       text-align:center;
       padding:1vw;
-      clip-path: polygon(0% 10%,47.1% 10%, 50% 0%, 52.9% 10%, 100% 10%, 100% 100%, 0% 100%);
       padding-top:1.5vh;
     }
     .dropmoblink{
