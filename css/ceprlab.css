@@ -196,6 +196,11 @@ h4{
     color:#540b0e;
     text-decoration:none;
 }
+.img-logo{
+  height:5vmin;
+  position: relative;
+  top:2vmin;
+}
 @media screen and (max-width:1200px){
     .main-body{
         width:90vw;
@@ -236,5 +241,8 @@ h4{
     }
     .close{
       font-size:6vw;
+    }
+    .img-logo{
+      height:6vmin;
     }
 }
