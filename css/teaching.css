@@ -46,6 +46,11 @@ li{
     position: relative;
     top:2vmin;
 }
+.img-logo{
+    height:5vmin;
+    position: relative;
+    top:2vmin;
+  }
 .project_videos{
     display:flex;
     flex-flow: row wrap;
@@ -57,12 +62,14 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width:30vw;
 }
 .project_title{
     margin:2vmin;
     text-transform: capitalize;
     font-weight: 600;
     font-size: 1.2em;
+    text-align: center;
 }
 iframe{
     width:30vw;
@@ -95,6 +102,7 @@ iframe{
     }
     .project_box{
         margin:5vmin 5vmin;
+        width:90vw;
     }
     .project_title{
         margin:2vmin;
