@@ -1,0 +1,110 @@
+body{
+    overflow-x:hidden;
+}
+.main-body{
+    width:90vw;
+    margin:0vw 5vw;
+    font-size:2.5vh;
+}
+h2{
+    font-size:175%;
+    text-align:center;
+}
+h3{
+    font-size:125%;
+}
+li a{
+    font-weight: 600;
+    color:#540b0e;
+    text-decoration:none;
+}
+li{
+    margin:3vmin 0vmin;
+    line-height:2;
+}
+.text a{
+    color:#540b0e;
+    text-decoration:none;
+    font-weight: 600;
+}
+.text{
+    padding-top:2vh;
+    line-height:2;
+    display:block;
+}
+.book{
+    height: 15vh;
+    margin:0vh 2vw;
+    float:left;
+}
+.booktext{
+    display: block;
+    min-height: 18vh;
+}
+.aicon{
+    height:5vmin;
+    position: relative;
+    top:2vmin;
+}
+.project_videos{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.project_box{
+    margin:5vmin 10vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project_title{
+    margin:2vmin;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+iframe{
+    width:30vw;
+    height:20vw;
+}
+.mySlider img{
+    width:90vw;
+    height:50vw;
+    object-fit: cover;
+    object-position: center;
+  }
+  .slick-prev:before, .slick-next:before{
+    color: rgba(0,0,0,0.5) !important;
+  }
+  .slick-prev{
+    margin-right:7vw;
+  }
+@media screen and (max-width:1200px){
+    .book{
+        width:30vw;
+        margin:0vh 2vw;
+        height: initial; 
+        float:left;   
+    }
+    .main-body{
+        font-size:2.7vw;
+    }
+    .aicon{
+        height:6vmin;
+    }
+    .project_box{
+        margin:5vmin 5vmin;
+    }
+    .project_title{
+        margin:2vmin;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 1.7em;
+        text-align: center;
+    }
+    iframe{
+        width:90vw;
+        height:60vw;
+    }
+    }
